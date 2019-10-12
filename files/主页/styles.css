@@ -1,0 +1,283 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:static;
+  left:auto;
+  width:1024px;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+.form_sketch {
+  border-color:transparent;
+  background-color:transparent;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u1_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1024px;
+  height:768px;
+  background:-webkit-linear-gradient(332.182669302166deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  background:-moz-linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  background:linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  box-sizing:border-box;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgba(121, 121, 121, 1);
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u1 {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1024px;
+  height:768px;
+  display:flex;
+}
+#u1 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u1_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
+}
+#u2_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:330px;
+  height:75px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'叶根友毛笔行书简体 Bold', '叶根友毛笔行书简体 Regular', '叶根友毛笔行书简体';
+  font-weight:700;
+  font-style:normal;
+  font-size:65px;
+  color:#4E607B;
+}
+#u2 {
+  border-width:0px;
+  position:absolute;
+  left:347px;
+  top:291px;
+  width:330px;
+  height:75px;
+  display:flex;
+  font-family:'叶根友毛笔行书简体 Bold', '叶根友毛笔行书简体 Regular', '叶根友毛笔行书简体';
+  font-weight:700;
+  font-style:normal;
+  font-size:65px;
+  color:#4E607B;
+}
+#u2 .text {
+  position:absolute;
+  align-self:flex-start;
+  padding:0px 0px 0px 0px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u2_text {
+  border-width:0px;
+  white-space:nowrap;
+  text-transform:none;
+}
+#u3_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:304px;
+  height:21px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'田氏颜体大字库 Bold', '田氏颜体大字库 Regular', '田氏颜体大字库';
+  font-weight:700;
+  font-style:normal;
+  letter-spacing:5px;
+  color:#4E607B;
+}
+#u3 {
+  border-width:0px;
+  position:absolute;
+  left:570px;
+  top:381px;
+  width:304px;
+  height:21px;
+  display:flex;
+  font-family:'田氏颜体大字库 Bold', '田氏颜体大字库 Regular', '田氏颜体大字库';
+  font-weight:700;
+  font-style:normal;
+  letter-spacing:5px;
+  color:#4E607B;
+}
+#u3 .text {
+  position:absolute;
+  align-self:flex-start;
+  padding:0px 0px 0px 0px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u3_text {
+  border-width:0px;
+  white-space:nowrap;
+  text-transform:none;
+}
+#u4_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:173px;
+  height:49px;
+}
+#u4 {
+  border-width:0px;
+  position:absolute;
+  left:234px;
+  top:549px;
+  width:173px;
+  height:49px;
+  display:flex;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:25px;
+  letter-spacing:10px;
+}
+#u4 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u4_img.mouseOver {
+}
+#u4.mouseOver {
+}
+#u4_img.mouseDown {
+}
+#u4.mouseDown {
+}
+#u4_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+}
+#u5_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:173px;
+  height:49px;
+  background:inherit;
+  background-color:rgba(78, 96, 123, 1);
+  border:none;
+  border-radius:14px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:25px;
+  letter-spacing:10px;
+}
+#u5 {
+  border-width:0px;
+  position:absolute;
+  left:618px;
+  top:549px;
+  width:173px;
+  height:49px;
+  display:flex;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:25px;
+  letter-spacing:10px;
+}
+#u5 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u5_div.mouseOver {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:173px;
+  height:49px;
+  background:inherit;
+  background-color:rgba(54, 129, 164, 1);
+  border:none;
+  border-radius:14px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:25px;
+  letter-spacing:10px;
+}
+#u5.mouseOver {
+}
+#u5_div.mouseDown {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:173px;
+  height:49px;
+  background:inherit;
+  background-color:rgba(54, 129, 164, 1);
+  border:none;
+  border-radius:14px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:25px;
+  letter-spacing:10px;
+}
+#u5.mouseDown {
+}
+#u5_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+}
