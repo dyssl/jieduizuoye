@@ -11,4 +11,3 @@
 ![](https://github.com/tinglongYu/jieduizuoye/raw/master/图片/release.png)
 # 代码质量评测
 ![](https://github.com/tinglongYu/jieduizuoye/raw/master/图片/全图.png)
-![](https://github.com/tinglongYu/jieduizuoye/raw/master/图片/GPA.png)
