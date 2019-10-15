@@ -39,13 +39,14 @@
     <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
     <script src="data/document.js"></script>
     <script src="files/复盘/data.js"></script>
+	  <script src="resources/all.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
   </head>
-  <body>
+  <body onload="showdetail()">
     <div id="base" class="">
 
       <!-- Unnamed (矩形) -->
@@ -476,7 +477,7 @@
       <div id="u301" class="ax_default _一级标题">
         <div id="u301_div" class=""></div>
         <div id="u301_text" class="text ">
-          <p><span>积分变化：</span></p>
+          <p id="score2">积分变化：</p>
         </div>
       </div>
 
@@ -484,7 +485,7 @@
       <div id="u302" class="ax_default primary_button">
         <div id="u302_div" class=""></div>
         <div id="u302_text" class="text ">
-          <p><span>你的名字</span></p>
+          <p id="username2">你的名字</p>
         </div>
       </div>
 
@@ -492,7 +493,7 @@
       <div id="u303" class="ax_default _一级标题">
         <div id="u303_div" class=""></div>
         <div id="u303_text" class="text ">
-          <p><span>积分变化：</span></p>
+          <p id="score3">积分变化：</p>
         </div>
       </div>
 
@@ -500,7 +501,7 @@
       <div id="u304" class="ax_default primary_button">
         <div id="u304_div" class=""></div>
         <div id="u304_text" class="text ">
-          <p><span>你的名字</span></p>
+          <p id="username3">你的名字</p>
         </div>
       </div>
 
@@ -508,7 +509,7 @@
       <div id="u305" class="ax_default _一级标题">
         <div id="u305_div" class=""></div>
         <div id="u305_text" class="text ">
-          <p><span>积分变化：</span></p>
+          <p id="score0">积分变化：</p>
         </div>
       </div>
 
@@ -516,7 +517,7 @@
       <div id="u306" class="ax_default primary_button">
         <div id="u306_div" class=""></div>
         <div id="u306_text" class="text ">
-          <p><span>你的名字</span></p>
+          <p id="username0">你的名字</p>
         </div>
       </div>
 
@@ -524,7 +525,7 @@
       <div id="u307" class="ax_default _一级标题">
         <div id="u307_div" class=""></div>
         <div id="u307_text" class="text ">
-          <p><span>积分变化：</span></p>
+          <p id="score1">积分变化：</p>
         </div>
       </div>
 
@@ -532,15 +533,15 @@
       <div id="u308" class="ax_default primary_button">
         <div id="u308_div" class=""></div>
         <div id="u308_text" class="text ">
-          <p><span>你的名字</span></p>
+          <p id="username1">你的名字</p>
         </div>
       </div>
 
       <!-- Unnamed (形状) -->
-      <div id="u309" class="ax_default primary_button">
+      <div id="u309" class="ax_default primary_button"  onclick="window.open('已登入界面.html','_self')">
         <img id="u309_img" class="img " src="images/复盘/u309.svg"/>
         <div id="u309_text" class="text ">
-          <p><span>排行榜</span></p>
+          <p>主菜单</p>
         </div>
       </div>
     </div>
