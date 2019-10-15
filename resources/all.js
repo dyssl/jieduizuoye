@@ -89,7 +89,7 @@ function begin() {
                 console.log(token);
 				localStorage.setItem("token1",token);
 				localStorage.setItem("user_id1",user_id);
-			   localStorage.setItem("username1",username);
+ localStorage.setItem("username1",username);
                 alert("登录成功");
                 window.location.href = '已登入界面.html'
             };
@@ -447,59 +447,6 @@ function getid(){
 	return user_id;
 }
 
-    function add(){document.getElementById("demo").innerHTML=null;x++;my(); }
-    function dec(){if(x>0){document.getElementById("demo").innerHTML=null;x--;my();} else return;}
-    function my() {
-
-        var json;
-        var token = localStorage.getItem('token1');
-        (function ($) {
-            $.fn.serializeJson = function () {
-                var serializeObj = {};
-                var array = this.serializeArray();
-                var str = this.serialize();
-                $(array).each(function () {
-                    if (serializeObj[this.name]) {
-                        if ($.isArray(serializeObj[this.name]) && this.value != "") {
-                            serializeObj[this.name].push(this.value);
-                        } else {
-                            if (this.value != "") {
-                                serializeObj[this.name] = [serializeObj[this.name], this.value];
-                            }
-                        }
-                    } else {
-                        if (this.value != "") {
-                            serializeObj[this.name] = this.value;
-                        }
-                    }
-                });
-                return serializeObj;
-            };
-        })(jQuery);
-        $.ajax({
-            type: "GET",
-            url: "https://api.shisanshui.rtxux.xyz/history?page="+x+"&limit=1&player_id=1",
-            headers: {
-                'x-auth-token': token
-            } ,
-            success: function (result) {
-            console.log(result);
-            console.log(token);
-            json = result;
-            function getJsonLength(json) {
-                for (var i in json) {
-                    var l = 0;
-                    for (var j in json.data) {
-                        document.getElementById("demo").innerHTML += '<tr><td style="width: 10%">' + json.data[l].id + '</td><td style="width: 65%;text-align: center">' + json.data[l].card + '</td><td style="width: 10%">' + json.data[l].score + '</td><td style="width: 15%">' + json.data[l].timestamp + '</td></tr>';
-                        l++;
-                    };
-                };
-            }
-
-            getJsonLength(json);
-        }
-    });
-    }
 
     function add(){document.getElementById("demo").innerHTML=null;x++;my(); }
     function dec(){if(x>0){document.getElementById("demo").innerHTML=null;x--;my();} else return;}
@@ -532,7 +479,7 @@ function getid(){
         })(jQuery);
         $.ajax({
             type: "GET",
-            url: "https://api.shisanshui.rtxux.xyz/history?page="+x+"&limit=20&player_id=1",
+            url: "https://api.shisanshui.rtxux.xyz/history?page="+x+"&limit=20&player_id="+getid(),
             headers: {
                 'x-auth-token': token
             } ,
@@ -615,6 +562,7 @@ document.getElementById('score3').innerHTML = "积分变化："+dscores[3];
             },
 			error: function (res) {
 				alert("复盘失败");
+                window.location.href = '已登入界面.html'
         	}
         });
 	
