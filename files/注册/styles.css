@@ -7,6 +7,9 @@
   margin-left:0;
   margin-right:0;
   text-align:left;
+	  background:-webkit-linear-gradient(332.182669302166deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  background:-moz-linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  background:linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
 }
 .form_sketch {
   border-color:transparent;
@@ -15,6 +18,12 @@
 #base {
   position:absolute;
   z-index:0;
+	  position:absolute; /*绝对定位*/ 
+  top:50%; /*距顶部50%*/ 
+  left:50%; 
+  margin:-384px 0 0 -512px; /*设定这个div的margin-top的负值为自身的高度的一半,margin-left的值也是自身的宽度的一半的负值.(感觉在绕口令)*/ 
+  width:1024px; /*宽为400,那么margin-top为-200px*/ 
+  height:768px; /*高为200那么margin-left为-100px;*/ 
 }
 #u6_div {
   border-width:0px;
@@ -23,9 +32,6 @@
   top:0px;
   width:1024px;
   height:768px;
-  background:-webkit-linear-gradient(332.182669302166deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
-  background:-moz-linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
-  background:linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
   box-sizing:border-box;
   border-width:1px;
   border-style:solid;
@@ -34,6 +40,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
+  outline: none;
+  border: none;
 }
 #u6 {
   border-width:0px;

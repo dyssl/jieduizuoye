@@ -39,13 +39,22 @@
     <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
     <script src="data/document.js"></script>
     <script src="files/开始游戏/data.js"></script>
+	  <script src="resources/all.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
   </head>
-  <body>
+
+  <body onload="changecard()">
+	  <script type="text/javascript">
+　　	function myfun() 　　
+		  { 　　 show();　
+		   		changecard();
+		  } 　　/*用window.onload调用myfun()*/　　
+		  window.onload = myfun;//不要括号
+</script>
     <div id="base" class="">
 
       <!-- Unnamed (矩形) -->
@@ -58,7 +67,7 @@
 
       <!-- Unnamed (图片 ) -->
       <div id="u67" class="ax_default image">
-        <img id="u67_img" class="img " src="images/开始游戏/u67.png"/>
+        <img id="u67_img" class="img " src="images/开始游戏/u67.png" />
         <div id="u67_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
@@ -185,7 +194,8 @@
       </div>
 
       <!-- Unnamed (形状) -->
-      <div id="u83" class="ax_default primary_button">
+      <div id="u83" class="ax_default primary_button"
+		   onclick="submit()">
         <img id="u83_img" class="img " src="images/开始游戏/u83.svg"/>
         <div id="u83_text" class="text ">
           <p><span>出牌</span></p>

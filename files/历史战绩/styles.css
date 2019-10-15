@@ -7,6 +7,9 @@
   margin-left:0;
   margin-right:0;
   text-align:left;
+	  background:-webkit-linear-gradient(332.182669302166deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  background:-moz-linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
+  background:linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
 }
 .form_sketch {
   border-color:transparent;
@@ -15,6 +18,30 @@
 #base {
   position:absolute;
   z-index:0;
+	  position:absolute; /*绝对定位*/ 
+  top:50%; /*距顶部50%*/ 
+  left:50%; 
+  margin:-384px 0 0 -512px; /*设定这个div的margin-top的负值为自身的高度的一半,margin-left的值也是自身的宽度的一半的负值.(感觉在绕口令)*/ 
+  width:1024px; /*宽为400,那么margin-top为-200px*/ 
+  height:768px; /*高为200那么margin-left为-100px;*/ 
+}
+table{
+    margin: 0px 0px;
+    width: 100%;
+    height: 90px;
+    border: 1px solid rgba(135, 210, 208, 0.6);
+    background: rgba(135, 210, 208, 0.6);
+    border-collapse: collapse;
+    /*border-spacing: 80px 10px;*/
+	font-size: 17px;
+}
+#pp {
+  border-width:0px;
+  position:absolute;
+  left:30px;
+  top:80px;
+  width:637px;
+  height:490px;
 }
 #u122_div {
   border-width:0px;
@@ -23,9 +50,6 @@
   top:0px;
   width:1024px;
   height:768px;
-  background:-webkit-linear-gradient(332.182669302166deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
-  background:-moz-linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
-  background:linear-gradient(117.817330697834deg, rgba(232, 250, 249, 1) 4%, rgba(216, 238, 250, 1) 96%);
   box-sizing:border-box;
   border-width:1px;
   border-style:solid;
@@ -34,6 +58,8 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
+		  outline: none;
+  border: none;
 }
 #u122 {
   border-width:0px;
@@ -106,7 +132,7 @@
   position:absolute;
   left:213px;
   top:87px;
-  width:627px;
+  width:717px;
   height:490px;
 }
 #u125_img {
@@ -130,6 +156,8 @@
   font-style:normal;
   font-size:25px;
   color:#4E607B;
+			  outline: none;
+  border: none;
 }
 #u125 .text {
   position:absolute;
@@ -137,11 +165,16 @@
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
+	outline: none;
+  border: none;
+	
 }
 #u125_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
+	outline: none;
+  border: none;
 }
 #u126_img {
   border-width:0px;
@@ -164,6 +197,7 @@
   font-style:normal;
   font-size:25px;
   color:#4E607B;
+	
 }
 #u126 .text {
   position:absolute;
@@ -1765,7 +1799,7 @@
   border-width:0px;
   position:absolute;
   left:234px;
-  top:671px;
+  top:691px;
   width:228px;
   height:66px;
   display:flex;
@@ -1807,7 +1841,7 @@
   border-width:0px;
   position:absolute;
   left:592px;
-  top:671px;
+  top:691px;
   width:228px;
   height:66px;
   display:flex;
@@ -1837,19 +1871,11 @@
   word-wrap:break-word;
   text-transform:none;
 }
-#u181_img {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:96px;
-  height:31px;
-}
 #u181 {
   border-width:0px;
   position:absolute;
-  left:329px;
-  top:607px;
+  left:239px;
+  top:647px;
   width:96px;
   height:31px;
   display:flex;
@@ -1866,18 +1892,69 @@
   box-sizing:border-box;
   width:100%;
 }
-#u181_img.mouseOver {
-}
-#u181.mouseOver {
-}
-#u181_img.mouseDown {
-}
-#u181.mouseDown {
-}
-#u181_text {
+
+#but2 {
   border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
+  position:absolute;
+  left:380px;
+  top:560px;
+  width:96px;
+  height:31px;
+  display:flex;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  letter-spacing:5px;
+}
+#but2 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#but3 {
+  border-width:0px;
+  position:absolute;
+  left:500px;
+  top:560px;
+  width:96px;
+  height:31px;
+  display:flex;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  letter-spacing:5px;
+}
+#but3 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#but4 {
+  border-width:0px;
+  position:absolute;
+  left:329px;
+  top:607px;
+  width:96px;
+  height:31px;
+  display:flex;
+  font-family:'田氏颜体大字库';
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  letter-spacing:5px;
+}
+#but4 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
 }
 #u182_input {
   position:absolute;
@@ -1938,8 +2015,8 @@
 #u182 {
   border-width:0px;
   position:absolute;
-  left:445px;
-  top:605px;
+  left:355px;
+  top:645px;
   width:202px;
   height:33px;
   display:flex;
