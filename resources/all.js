@@ -43,7 +43,7 @@ function register() {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "https://api.shisanshui.rtxux.xyz/auth/register",
+        url: "https://api.shisanshui.rtxux.xyz/auth/register2",
         data: JSON.stringify(reg_data), //提交的数据
         contentType: "application/json;charset-UTF-8",
         success: function (result) { //todo
@@ -177,6 +177,7 @@ function submit(){
 	card4[1]=card3[3]+' '+card3[4]+' '+card3[5]+' '+card3[6]+' '+card3[7];
 	card4[2]=card3[8]+' '+card3[9]+' '+card3[10]+' '+card3[11]+' '+card3[12];
 	console.log(card4);
+    id =Number(id);
 	$.ajax({
             url: "https://api.shisanshui.rtxux.xyz/game/submit",
 			contentType:"application/json",
