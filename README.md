@@ -7,7 +7,7 @@
 
 2.其余部分全部为前端文件，全部下载后用火狐或谷歌浏览器打开主页.html文件即可查看所有的UI实现
 
-3.也可以在releases中下载defaul.exe文件，下载完成直接打开即可使用
+3.也可以在releases中下载defaul.exe文件，下载完成直接打开即可使用（建议不要，exe文件运行速度慢不稳定）
 ![](https://github.com/tinglongYu/jieduizuoye/raw/master/图片/release.png)
 # 代码质量评测
 ![](https://github.com/tinglongYu/jieduizuoye/raw/master/图片/全图.png)
