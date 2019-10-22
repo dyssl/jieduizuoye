@@ -7,7 +7,7 @@
 
 2.其余部分全部为前端文件，全部下载后用火狐或谷歌浏览器打开主页.html文件即可查看所有的UI实现
 
-3.由于从github下载exe文件非常慢且会出现下载失败的问题，如需exe文件请联系QQ：1067414607
+
 # 代码质量评测
 ![](https://github.com/tinglongYu/jieduizuoye/raw/master/图片/全图.png)
 
